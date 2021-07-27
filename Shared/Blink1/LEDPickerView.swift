@@ -23,18 +23,18 @@ struct LEDPickerView: View {
     
     
     var body: some View {
-        VStack {
-            Circle()
+        VStack(spacing:0) {
+            Rectangle()
                 .fill(topSelected ? color1 : color1.opacity(0.2))
                 .onTapGesture(perform: {
                     topSelected.toggle()
                 })
-            Circle()
+            Rectangle()
                 .fill(bottomSelected ? color2 : color2.opacity(0.2))
                 .onTapGesture(perform: {
                     bottomSelected.toggle()
                 })
-        }
+        }.aspectRatio(8/3, contentMode: .fit)
     }
 }
 

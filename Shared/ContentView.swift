@@ -12,8 +12,8 @@ struct ContentView: View {
 //    @State var color2:Color
     
     var body: some View {
-        HStack {
-           // LEDPickerView($whichLED)
+        VStack {
+            LEDPickerView()
             ColorControllerView()
         }
     }

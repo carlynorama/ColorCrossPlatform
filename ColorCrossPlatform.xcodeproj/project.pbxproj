@@ -21,6 +21,8 @@
 		D259ED8C26ACE34000C98748 /* ColorPickerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259ED8526ACE34000C98748 /* ColorPickerSlider.swift */; };
 		D259ED8D26ACE34000C98748 /* RGBSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259ED8626ACE34000C98748 /* RGBSlidersView.swift */; };
 		D259ED8E26ACE34000C98748 /* RGBSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D259ED8626ACE34000C98748 /* RGBSlidersView.swift */; };
+		DA11C29026B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11C28F26B04EAB004A4687 /* Mach2OutlineShape.swift */; };
+		DA11C29126B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11C28F26B04EAB004A4687 /* Mach2OutlineShape.swift */; };
 		DA55F0A226AF47660004D6CB /* ColorControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorControllerView.swift */; };
 		DA55F0A326AF47660004D6CB /* ColorControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorControllerView.swift */; };
 		DA55F0A726AF481D0004D6CB /* Blink1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A626AF481D0004D6CB /* Blink1.swift */; };
@@ -44,6 +46,7 @@
 		D259ED8426ACE34000C98748 /* Color+Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Components.swift"; sourceTree = "<group>"; };
 		D259ED8526ACE34000C98748 /* ColorPickerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerSlider.swift; sourceTree = "<group>"; };
 		D259ED8626ACE34000C98748 /* RGBSlidersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBSlidersView.swift; sourceTree = "<group>"; };
+		DA11C28F26B04EAB004A4687 /* Mach2OutlineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mach2OutlineShape.swift; sourceTree = "<group>"; };
 		DA55F0A126AF47660004D6CB /* ColorControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorControllerView.swift; sourceTree = "<group>"; };
 		DA55F0A626AF481D0004D6CB /* Blink1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1.swift; sourceTree = "<group>"; };
 		DA55F0A926AF4BFC0004D6CB /* RGBLED.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBLED.swift; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DA55F0AC26AF53F70004D6CB /* LEDPickerView.swift */,
+				DA11C28F26B04EAB004A4687 /* Mach2OutlineShape.swift */,
 				DA55F0A626AF481D0004D6CB /* Blink1.swift */,
 				DA55F0A926AF4BFC0004D6CB /* RGBLED.swift */,
 			);
@@ -242,6 +246,7 @@
 				D259ED8B26ACE34000C98748 /* ColorPickerSlider.swift in Sources */,
 				D259ED7526ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
 				D259ED8726ACE34000C98748 /* HSBSlidersView.swift in Sources */,
+				DA11C29026B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */,
 				DA55F0A226AF47660004D6CB /* ColorControllerView.swift in Sources */,
 				DA55F0AD26AF53F70004D6CB /* LEDPickerView.swift in Sources */,
 				D259ED8D26ACE34000C98748 /* RGBSlidersView.swift in Sources */,
@@ -259,6 +264,7 @@
 				D259ED8C26ACE34000C98748 /* ColorPickerSlider.swift in Sources */,
 				D259ED7626ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
 				D259ED8826ACE34000C98748 /* HSBSlidersView.swift in Sources */,
+				DA11C29126B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */,
 				DA55F0A326AF47660004D6CB /* ColorControllerView.swift in Sources */,
 				DA55F0AE26AF53F70004D6CB /* LEDPickerView.swift in Sources */,
 				D259ED8E26ACE34000C98748 /* RGBSlidersView.swift in Sources */,
