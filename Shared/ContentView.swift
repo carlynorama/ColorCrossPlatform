@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var myColor:Color = Color(red: 0.4, green: 0.1, blue: 0.7)
+//    @State var color1:Color
+//    @State var color2:Color
     
     var body: some View {
-        VStack {
-            myColor
-            HSBSlidersView(myColor: $myColor)
-            RGBSlidersView(myColor: $myColor)
-            ColorPicker("ColorPicker", selection: $myColor)
-        }.padding()
+        HStack {
+           // LEDPickerView($whichLED)
+            ColorControllerView()
+        }
     }
 }
 
