@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ColorControllerView: View {
-    @State var myColor:Color = Color(red: 0.4, green: 0.1, blue: 0.7)
+    @Binding var myColor:Color //= Color(red: 0.4, green: 0.1, blue: 0.7)
     
     var body: some View {
         VStack {
-            myColor
+            //myColor //doesn't work as a button, how to force a an update???
             HSBSlidersView(myColor: $myColor)
             RGBSlidersView(myColor: $myColor)
             //ColorPicker("ColorPicker", selection: $myColor)
-        }.padding()
+        }
     }
 }
 
-struct ColorControllerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ColorControllerView()
-    }
-}
+//struct ColorControllerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ColorControllerView()
+//    }
+//}
