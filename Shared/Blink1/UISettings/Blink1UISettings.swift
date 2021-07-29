@@ -48,7 +48,7 @@ struct Blink1UISettings {
         case .bottom:
             return color2
         case .both:
-            assert(self.color2 != self.color1, "Which color???")
+            //assert(self.color2 != self.color1, "Which color???")
             return color1
         case .none:
             return nil

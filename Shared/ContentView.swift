@@ -46,13 +46,19 @@ struct UpdateMessage:View {
     var body: some View {
         VStack {
             Text(store.getMessage(settings))
+            Button("Copy to Clipboard") {
+                copyToClipBoard(store.getMessage(settings))
+            }
             Button("Press to dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
             .font(.title)
             .padding()
-            .background(Color.black)
         }
+    }
+    
+    func copyToClipBoard(_ message:String) {
+        print("WTF Mate!")
     }
 }
 
