@@ -36,6 +36,8 @@
 		DA55F0AD26AF53F70004D6CB /* CurrentSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */; };
 		DA55F0AE26AF53F70004D6CB /* CurrentSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */; };
 		DA5990E426B358420098486F /* Blink1CLIStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA976A9B26B313BD00B983AA /* Blink1CLIStringGenerator.swift */; };
+		DA5990E626B363710098486F /* RGBLED.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5990E526B363710098486F /* RGBLED.swift */; };
+		DA5990E726B363710098486F /* RGBLED.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5990E526B363710098486F /* RGBLED.swift */; };
 		DA66D63F26B350900054EF56 /* ColorControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D63E26B350900054EF56 /* ColorControllerView.swift */; };
 		DA66D64026B350900054EF56 /* ColorControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D63E26B350900054EF56 /* ColorControllerView.swift */; };
 		DA976A9A26B2FE0E00B983AA /* Switchboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA976A9926B2FE0E00B983AA /* Switchboard.swift */; };
@@ -65,6 +67,7 @@
 		DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersView.swift; sourceTree = "<group>"; };
 		DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UISettings.swift; sourceTree = "<group>"; };
 		DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingView.swift; sourceTree = "<group>"; };
+		DA5990E526B363710098486F /* RGBLED.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBLED.swift; sourceTree = "<group>"; };
 		DA66D63E26B350900054EF56 /* ColorControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorControllerView.swift; sourceTree = "<group>"; };
 		DA976A9926B2FE0E00B983AA /* Switchboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switchboard.swift; sourceTree = "<group>"; };
 		DA976A9B26B313BD00B983AA /* Blink1CLIStringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Blink1CLIStringGenerator.swift; path = Shared/Blink1/Blink1CLIStringGenerator.swift; sourceTree = SOURCE_ROOT; };
@@ -153,6 +156,7 @@
 		DA22C0E926B074DF007D0C7C /* DeviceSettings */ = {
 			isa = PBXGroup;
 			children = (
+				DA5990E526B363710098486F /* RGBLED.swift */,
 				DA22C0EA26B0751E007D0C7C /* Blink1Device.swift */,
 			);
 			path = DeviceSettings;
@@ -298,6 +302,7 @@
 				DAAB504326B1A39500B87706 /* Blink1DeviceStore.swift in Sources */,
 				D259ED7526ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
 				D259ED8726ACE34000C98748 /* HSBSlidersView.swift in Sources */,
+				DA5990E626B363710098486F /* RGBLED.swift in Sources */,
 				DA11C29026B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */,
 				DA27457526B340B000ADACB7 /* Color+StringDescriptions.swift in Sources */,
 				DA55F0A226AF47660004D6CB /* ColorSlidersView.swift in Sources */,
@@ -322,6 +327,7 @@
 				DA11C29126B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */,
 				DA27457626B340B000ADACB7 /* Color+StringDescriptions.swift in Sources */,
 				DA55F0A326AF47660004D6CB /* ColorSlidersView.swift in Sources */,
+				DA5990E726B363710098486F /* RGBLED.swift in Sources */,
 				DA339B6C26B0741B007A8F09 /* SelectionState.swift in Sources */,
 				DA55F0AE26AF53F70004D6CB /* CurrentSettingView.swift in Sources */,
 				DA66D64026B350900054EF56 /* ColorControllerView.swift in Sources */,
