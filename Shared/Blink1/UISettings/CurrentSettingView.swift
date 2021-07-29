@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct LEDPickerView: View {
+struct CurrentSettingView: View {
     @Binding var blink1:Blink1UISettings
     
     //    @Binding var color1:Color //= Color.springGreen
@@ -53,6 +53,6 @@ struct LEDPickerView: View {
 
 struct LEDPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        LEDPickerView(blink1: .constant(Blink1UISettings()))
+        CurrentSettingView(blink1: .constant(Blink1UISettings()))
     }
 }
