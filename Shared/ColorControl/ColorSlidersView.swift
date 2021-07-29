@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorControllerView: View {
+struct ColorSlidersView: View {
     @Binding var myColor:Color //= Color(red: 0.4, green: 0.1, blue: 0.7)
     
     var body: some View {
