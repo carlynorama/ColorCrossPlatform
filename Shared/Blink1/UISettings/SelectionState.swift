@@ -27,6 +27,19 @@ enum SelectionState:CaseIterable {
         }
     }
     
+    var optionalInt:Int? {
+        switch self {
+        case .top:
+            return 1
+        case .bottom:
+            return 2
+        case .both:
+            return 0
+        case .none:
+            return nil
+        }
+    }
+    
     mutating func toggleTop() {
         switch self {
         case .top:
