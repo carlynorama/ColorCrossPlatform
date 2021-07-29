@@ -132,4 +132,34 @@ extension Color {
     static func convertByte(_ byte:UInt8) -> Double {
         return Double(byte/255)
     }
+    
+    init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+        self.init(red: UInt8(red), green: UInt8(green), blue: UInt8(blue))
+    }
+
+    init(rgb: Int) {
+        self.init(
+            red: (rgb >> 16) & 0xFF,
+            green: (rgb >> 8) & 0xFF,
+            blue: rgb & 0xFF
+        )
+    }
+    
+    init(hexString: String) {
+        var hexSanitized = hexString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+        hexSanitized = hexSanitized.replacingOccurrences(of: "0x", with: "")
+
+
+        assert((hexSanitized.count) != 6, "Invalid string")
+        
+        var rgbValue:UInt64 = 0
+        Scanner(string: hexSanitized).scanHexInt64(&rgbValue)
+        
+        self.init(rgb: Int(rgbValue))
+    }
 }
