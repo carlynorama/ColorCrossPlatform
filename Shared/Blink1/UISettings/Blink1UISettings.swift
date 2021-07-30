@@ -54,5 +54,13 @@ struct Blink1UISettings {
             return nil
         }
     }
+    
 
+
+}
+
+extension Blink1UISettings {
+    static var exampleSettings:Blink1UISettings {
+        Blink1UISettings()
+    }
 }
