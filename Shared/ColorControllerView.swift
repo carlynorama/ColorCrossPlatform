@@ -13,20 +13,25 @@ struct ColorControllerView: View {
     
     var body: some View {
         // ------------
-        pickedColor
-            .onTapGesture {
-                settings.updateColor(to: pickedColor)
-            }
         Picker("Which LEDs", selection: $settings.selectionState) {
             ForEach(SelectionState.allCases, id: \.self) { value in
                 Text("\(value.description)").tag(value)
             }
         }
         .pickerStyle(SegmentedPickerStyle())
-        ColorSlidersView(myColor: $pickedColor)
-            .onChange(of: pickedColor, perform: { value in
-                settings.updateColor(to: pickedColor)
-            })
+
+        AdaptiveStack {
+            pickedColor
+                .onTapGesture {
+                    settings.updateColor(to: pickedColor)
+                }
+            ColorSlidersView(myColor: $pickedColor)
+                .onChange(of: pickedColor, perform: { value in
+                    settings.updateColor(to: pickedColor)
+                })
+
+        }
+        
         // ------------
     }
 }
