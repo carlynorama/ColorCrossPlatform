@@ -47,7 +47,7 @@ struct UpdateMessage:View {
     var body: some View {
         VStack {
             Text(store.getMessage(settings))
-            CopyToClipBoardButton(message: store.getMessage(settings))
+            CopyToClipBoardButton(text: store.getMessage(settings))
             Button("Press to dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
