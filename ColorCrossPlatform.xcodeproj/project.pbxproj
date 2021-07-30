@@ -29,6 +29,8 @@
 		DA27457626B340B000ADACB7 /* Color+StringDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27457426B340B000ADACB7 /* Color+StringDescriptions.swift */; };
 		DA339B6B26B0741B007A8F09 /* SelectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA339B6A26B0741B007A8F09 /* SelectionState.swift */; };
 		DA339B6C26B0741B007A8F09 /* SelectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA339B6A26B0741B007A8F09 /* SelectionState.swift */; };
+		DA3F5CC626B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */; };
+		DA3F5CC726B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */; };
 		DA55F0A226AF47660004D6CB /* ColorSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */; };
 		DA55F0A326AF47660004D6CB /* ColorSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */; };
 		DA55F0A726AF481D0004D6CB /* Blink1UISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */; };
@@ -70,6 +72,7 @@
 		DA22C0EA26B0751E007D0C7C /* Blink1Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1Device.swift; sourceTree = "<group>"; };
 		DA27457426B340B000ADACB7 /* Color+StringDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+StringDescriptions.swift"; sourceTree = "<group>"; };
 		DA339B6A26B0741B007A8F09 /* SelectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionState.swift; sourceTree = "<group>"; };
+		DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpdateDialogView.swift; sourceTree = "<group>"; };
 		DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersView.swift; sourceTree = "<group>"; };
 		DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UISettings.swift; sourceTree = "<group>"; };
 		DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingView.swift; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 			children = (
 				D259ED6226ACE30800C98748 /* ColorCrossPlatformApp.swift */,
 				D259ED6326ACE30800C98748 /* ContentView.swift */,
+				DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */,
 				DA66D63E26B350900054EF56 /* ColorControllerView.swift */,
 				DA7EEA4E26B4755F00F9C79C /* GenericViews */,
 				DA55F0A526AF47D40004D6CB /* ColorControl */,
@@ -320,6 +324,7 @@
 				D259ED8B26ACE34000C98748 /* ColorPickerSlider.swift in Sources */,
 				DA976A9C26B313BD00B983AA /* Blink1CLIStringGenerator.swift in Sources */,
 				DAAB504326B1A39500B87706 /* Blink1DeviceStore.swift in Sources */,
+				DA3F5CC626B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */,
 				D259ED7526ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
 				DA7EEA4C26B473E600F9C79C /* AdaptiveStack.swift in Sources */,
 				D259ED8726ACE34000C98748 /* HSBSlidersView.swift in Sources */,
@@ -348,6 +353,7 @@
 				D259ED7626ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
 				D259ED8826ACE34000C98748 /* HSBSlidersView.swift in Sources */,
 				DA11C29126B04EAB004A4687 /* Mach2OutlineShape.swift in Sources */,
+				DA3F5CC726B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */,
 				DA27457626B340B000ADACB7 /* Color+StringDescriptions.swift in Sources */,
 				DA7EEA4D26B473E600F9C79C /* AdaptiveStack.swift in Sources */,
 				DA55F0A326AF47660004D6CB /* ColorSlidersView.swift in Sources */,
