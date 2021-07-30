@@ -8,7 +8,20 @@
 import Foundation
 import SwiftUI
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#endif
+
 extension Color {
+    #if canImport(UIKit)
+    typealias NativeColor = UIColor
+    #elseif canImport(AppKit)
+    typealias NativeColor = NSColor
+    #endif
+    
+    
     //MARK: -Test Colors
     static let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
     static let lemonYellow = Color(hue: 0.1639, saturation: 1, brightness: 1)
@@ -63,46 +76,27 @@ extension Color {
     
     //https://stackoverflow.com/questions/56586055/how-to-get-rgb-components-from-color-in-swiftui/62994482#62994482
     //Color.red.components.red // 0.9999999403953552 // <- SwiftUI Colors are not pure!
+    //guard from example code removed b/c of error on macOS
     var rgbComponents: (red: CGFloat, green: CGFloat, blue: CGFloat, opacity: CGFloat) {
-        
-        #if canImport(UIKit)
-        typealias NativeColor = UIColor
-        #elseif canImport(AppKit)
-        typealias NativeColor = NSColor
-        #endif
         
         var r: CGFloat = 0
         var g: CGFloat = 0
         var b: CGFloat = 0
         var o: CGFloat = 0
         
-        guard NativeColor(self).getRed(&r, green: &g, blue: &b, alpha: &o) else {
-            // You can handle the failure here as you want
-            return (0, 0, 0, 1)
-        }
-        
+        NativeColor(self).getRed(&r, green: &g, blue: &b, alpha: &o)
         return (r, g, b, o)
     }
     
     //my HSV Version
     var hsbComponents: (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, opacity: CGFloat) {
         
-        #if canImport(UIKit)
-        typealias NativeColor = UIColor
-        #elseif canImport(AppKit)
-        typealias NativeColor = NSColor
-        #endif
-        
         var h: CGFloat = 0
         var s: CGFloat = 0
         var b: CGFloat = 0
         var o: CGFloat = 0
         
-        guard NativeColor(self).getHue(&h, saturation: &s, brightness: &b, alpha: &o) else {
-            // You can handle the failure here as you want
-            return (0, 0, 0, 1)
-        }
-        
+        NativeColor(self).getHue(&h, saturation: &s, brightness: &b, alpha: &o)
         return (h, s, b, o)
     }
     
