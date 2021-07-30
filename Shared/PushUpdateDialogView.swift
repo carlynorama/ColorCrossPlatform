@@ -18,7 +18,7 @@ struct PushUpdateDialogView: View {
             VStack {
                 Text(store.getMessage(settings))
                 CopyButton(textToCopy: store.getMessage(settings)) {
-                    Text("Test")
+                    Text("Copy to Clipboard")
                 }
                 .font(.title)
                 .padding()
