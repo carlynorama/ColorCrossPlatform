@@ -47,18 +47,18 @@ struct UpdateMessage:View {
     var body: some View {
         VStack {
             Text(store.getMessage(settings))
-            CopyToClipBoardButton(text: store.getMessage(settings))
+            CopyToClipBoardButton(textToCopy: store.getMessage(settings))
+            CopyButton(textToCopy: store.getMessage(settings)) {
+                Text("Test")
+            }.buttonStyle(ExampleStyle())
             Button("Press to dismiss") {
                 presentationMode.wrappedValue.dismiss()
-            }
+            }.buttonStyle(ExampleStyle())
             .font(.title)
             .padding()
         }
     }
     
-    func copyToClipBoard(_ message:String) {
-        print("WTF Mate!")
-    }
 }
 
 
@@ -69,4 +69,14 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+struct ExampleStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color.springGreen)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+    }
+}
 
