@@ -4,6 +4,7 @@
 //
 //  Created by Carlyn Maw on 7/24/21.
 //
+// TODO: Confirm message do what I think they do
 
 import SwiftUI
 
@@ -46,9 +47,7 @@ struct UpdateMessage:View {
     var body: some View {
         VStack {
             Text(store.getMessage(settings))
-            Button("Copy to Clipboard") {
-                copyToClipBoard(store.getMessage(settings))
-            }
+            CopyToClipBoardButton(message: store.getMessage(settings))
             Button("Press to dismiss") {
                 presentationMode.wrappedValue.dismiss()
             }
