@@ -31,6 +31,8 @@
 		DA339B6C26B0741B007A8F09 /* SelectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA339B6A26B0741B007A8F09 /* SelectionState.swift */; };
 		DA3F5CC626B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */; };
 		DA3F5CC726B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */; };
+		DA49727626B5A8540041AB3E /* Blink1HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49727526B5A8540041AB3E /* Blink1HTTPURL.swift */; };
+		DA49727826B5AC9B0041AB3E /* Blink1UrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49727726B5AC9B0041AB3E /* Blink1UrlSession.swift */; };
 		DA55F0A226AF47660004D6CB /* ColorSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */; };
 		DA55F0A326AF47660004D6CB /* ColorSlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */; };
 		DA55F0A726AF481D0004D6CB /* Blink1UISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */; };
@@ -75,6 +77,8 @@
 		DA27457426B340B000ADACB7 /* Color+StringDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+StringDescriptions.swift"; sourceTree = "<group>"; };
 		DA339B6A26B0741B007A8F09 /* SelectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionState.swift; sourceTree = "<group>"; };
 		DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpdateDialogView.swift; sourceTree = "<group>"; };
+		DA49727526B5A8540041AB3E /* Blink1HTTPURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1HTTPURL.swift; sourceTree = "<group>"; };
+		DA49727726B5AC9B0041AB3E /* Blink1UrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UrlSession.swift; sourceTree = "<group>"; };
 		DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersView.swift; sourceTree = "<group>"; };
 		DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UISettings.swift; sourceTree = "<group>"; };
 		DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingView.swift; sourceTree = "<group>"; };
@@ -185,6 +189,15 @@
 			path = Switchboard;
 			sourceTree = "<group>";
 		};
+		DA49727426B5A7E30041AB3E /* Blink1-HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				DA49727526B5A8540041AB3E /* Blink1HTTPURL.swift */,
+				DA49727726B5AC9B0041AB3E /* Blink1UrlSession.swift */,
+			);
+			path = "Blink1-HTTP";
+			sourceTree = "<group>";
+		};
 		DA55F0A426AF47BE0004D6CB /* Blink1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +205,7 @@
 				DA22C0E826B074CA007D0C7C /* UISettings */,
 				DA22C0E926B074DF007D0C7C /* DeviceSettings */,
 				DA976A9B26B313BD00B983AA /* Blink1CLIStringGenerator.swift */,
+				DA49727426B5A7E30041AB3E /* Blink1-HTTP */,
 			);
 			path = Blink1;
 			sourceTree = "<group>";
@@ -327,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA49727826B5AC9B0041AB3E /* Blink1UrlSession.swift in Sources */,
 				DA55F0A726AF481D0004D6CB /* Blink1UISettings.swift in Sources */,
 				D259ED7726ACE30900C98748 /* ContentView.swift in Sources */,
 				DACD9FCB26B5939F000409E8 /* GeneralColorPickerView.swift in Sources */,
@@ -339,6 +354,7 @@
 				DAAB504326B1A39500B87706 /* Blink1DeviceStore.swift in Sources */,
 				DA3F5CC626B499DC00EEDDF0 /* PushUpdateDialogView.swift in Sources */,
 				D259ED7526ACE30900C98748 /* ColorCrossPlatformApp.swift in Sources */,
+				DA49727626B5A8540041AB3E /* Blink1HTTPURL.swift in Sources */,
 				DA7EEA4C26B473E600F9C79C /* AdaptiveStack.swift in Sources */,
 				D259ED8726ACE34000C98748 /* HSBSlidersView.swift in Sources */,
 				DA7EEA5026B4764200F9C79C /* CrossPlatformSizeClass.swift in Sources */,
