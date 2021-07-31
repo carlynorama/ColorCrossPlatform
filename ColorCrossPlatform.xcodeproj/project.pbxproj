@@ -79,6 +79,7 @@
 		DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUpdateDialogView.swift; sourceTree = "<group>"; };
 		DA49727526B5A8540041AB3E /* Blink1HTTPURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1HTTPURL.swift; sourceTree = "<group>"; };
 		DA49727726B5AC9B0041AB3E /* Blink1UrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UrlSession.swift; sourceTree = "<group>"; };
+		DA49727926B5BD690041AB3E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlidersView.swift; sourceTree = "<group>"; };
 		DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blink1UISettings.swift; sourceTree = "<group>"; };
 		DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingView.swift; sourceTree = "<group>"; };
@@ -114,6 +115,7 @@
 		D259ED5C26ACE30700C98748 = {
 			isa = PBXGroup;
 			children = (
+				DA49727926B5BD690041AB3E /* README.md */,
 				D259ED6126ACE30800C98748 /* Shared */,
 				D259ED6B26ACE30900C98748 /* iOS */,
 				D259ED7226ACE30900C98748 /* macOS */,
