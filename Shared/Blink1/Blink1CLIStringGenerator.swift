@@ -29,21 +29,34 @@ struct Blink1CLIStringGenerator {
         
         var commands:String = ""
         let delim = " ; "
-//        guard let ledSetting:Int = newSettings.selectionState.optionalInt else {
-//            fatalError()
-//        }
-        
-        if newSettings.color1 == newSettings.color2 {
-            let ledSetting = 0
-            let message = updateColor(of: device, led: ledSetting, to: newSettings.colorForState!)
-            commands.append(message)
-        } else {
+
+        switch newSettings.selectionState {
+        case .both:
+            if newSettings.color1 == newSettings.color2 {
+                let message = updateColor(of: device, led: nil, to: newSettings.colorForState!)
+                commands.append(message)
+            } else {
+                let message1 = updateColor(of: device, led: 1, to: newSettings.color1)
+                let message2 = updateColor(of: device, led: 2, to: newSettings.color2)
+                commands.append(message1)
+                commands.append(delim)
+                commands.append(message2)
+            }
+
+        case .top:
+            let message1 = updateColor(of: device, led: 1, to: newSettings.color1)
+            commands.append(message1)
+        case .bottom:
+            let message2 = updateColor(of: device, led: 2, to: newSettings.color2)
+            commands.append(message2)
+        default:
             let message1 = updateColor(of: device, led: 1, to: newSettings.color1)
             let message2 = updateColor(of: device, led: 2, to: newSettings.color2)
             commands.append(message1)
             commands.append(delim)
             commands.append(message2)
         }
+
         return commands
     }
     
