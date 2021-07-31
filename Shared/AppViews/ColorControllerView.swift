@@ -22,7 +22,7 @@ struct ColorControllerView: View {
                 }
             }
             .pickerStyle(SegmentedPickerStyle())
-        
+            AdaptiveStack {
             pickedColor
                 .frame(minWidth:5, minHeight: 5)
                 //.layoutPriority(1)
@@ -33,7 +33,7 @@ struct ColorControllerView: View {
                 .onChange(of: pickedColor) { value in
                     settings.updateColor(to: pickedColor)
                 }
-
+            }
         }
         
         
