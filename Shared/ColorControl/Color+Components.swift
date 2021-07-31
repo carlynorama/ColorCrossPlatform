@@ -29,19 +29,19 @@ extension Color {
     static let steelGray = Color(white: 0.4745)
     
     //MARK: -Component Getters
-    var red:Double {
+    var redValue:Double {
         Double(self.cgColor?.components?[0] ?? self.rgbComponents.red)
     }
     
-    var green:Double {
+    var greenValue:Double {
         Double(self.cgColor?.components?[1] ?? self.rgbComponents.green)
     }
     
-    var blue:Double {
+    var blueValue:Double {
         Double(self.cgColor?.components?[2] ?? self.rgbComponents.blue)
     }
     
-    var alpha:Double {
+    var alphaValue:Double {
         Double(self.cgColor?.components?[3] ?? self.rgbComponents.opacity)
     }
     
@@ -104,9 +104,9 @@ extension Color {
     
     func updateRGB(red:Double? = nil, green:Double? = nil, blue:Double? = nil) -> Color {
         return Color(
-            red: red ?? self.red,
-            green: green ?? self.green,
-            blue: blue ?? self.blue
+            red: red ?? self.redValue,
+            green: green ?? self.greenValue,
+            blue: blue ?? self.blueValue
         )
     }
     

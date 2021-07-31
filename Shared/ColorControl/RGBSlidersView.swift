@@ -12,7 +12,7 @@ struct RGBSlidersView: View {
     
     var redValue: Binding<Double> { Binding (
             get: {
-                return myColor.red
+                return myColor.redValue
             },
             set: {
                 myColor = myColor.updateRGB(red: $0)
@@ -21,7 +21,7 @@ struct RGBSlidersView: View {
     }
     
     var greenValue: Binding<Double> { Binding (
-            get: { myColor.green },
+            get: { myColor.greenValue },
             set: {
                 myColor = myColor.updateRGB(green: $0)
             }
@@ -29,7 +29,7 @@ struct RGBSlidersView: View {
     }
     
     var blueValue: Binding<Double> { Binding (
-            get: { myColor.blue },
+            get: { myColor.blueValue },
             set: {
                 myColor = myColor.updateRGB(blue: $0)
             }
