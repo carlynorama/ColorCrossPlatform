@@ -36,6 +36,7 @@ struct CurrentSettingView: View {
     
     
     var body: some View {
+        
         VStack(spacing:0) {
             Rectangle()
                 .fill(topSelected ? blink1.color1 : blink1.color1.opacity(0.2))
@@ -47,7 +48,9 @@ struct CurrentSettingView: View {
                 .onTapGesture(perform: {
                     blink1.selectionState.toggleBottom()
                 })
-        }.aspectRatio(8/3, contentMode: .fit)
+        }.clipShape(Circle())
+        
+        //.aspectRatio(8/3, contentMode: .fit)
     }
 }
 
