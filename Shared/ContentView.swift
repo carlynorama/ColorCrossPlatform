@@ -19,15 +19,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            //without the aspect ratio, the color box in the color controller view gets SQUIIISHED
             CurrentSettingView(blink1: $settings)
+                .aspectRatio(2, contentMode: .fit)
             
             Button(action: {
                 showSheet = true
             }, label: {
                 Text("Send Settings to Device")
             }).disabled(settings.selectionState == .none)
-            
-            pickedColor
         
             ColorControllerView(pickedColor: $pickedColor, settings: $settings)
         }

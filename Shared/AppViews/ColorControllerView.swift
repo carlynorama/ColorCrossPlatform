@@ -22,13 +22,10 @@ struct ColorControllerView: View {
                 }
             }
             .pickerStyle(SegmentedPickerStyle())
-            Text("Hello? Where are the Color boxes?")
+        
             pickedColor
-                .onTapGesture {
-                    settings.updateColor(to: pickedColor)
-                }
-            Rectangle()
-                .fill(pickedColor)
+                .frame(minWidth:5, minHeight: 5)
+                //.layoutPriority(1)
                 .onTapGesture {
                     settings.updateColor(to: pickedColor)
                 }

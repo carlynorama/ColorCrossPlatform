@@ -13,6 +13,7 @@ struct GeneralColorPickerView: View {
     
     var body: some View {
         AdaptiveStack {
+            //may require frame with minimum
             pickedColor
                 .onTapGesture {
                     perform(pickedColor)
