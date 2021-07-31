@@ -12,7 +12,6 @@ struct ColorSlidersView: View {
     
     var body: some View {
         VStack {
-            //myColor //doesn't work as a button, how to force a an update???
             HSBSlidersView(myColor: $myColor)
             RGBSlidersView(myColor: $myColor)
             //ColorPicker("ColorPicker", selection: $myColor)
