@@ -25,7 +25,7 @@ struct ContentView: View {
                 showSheet = true
             }, label: {
                 Text("Send Settings to Device")
-            })
+            }).disabled(settings.selectionState == .none)
             
             ColorControllerView(pickedColor: $pickedColor, settings: $settings)
         }
