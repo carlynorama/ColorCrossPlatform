@@ -26,9 +26,9 @@ struct ColorControllerView: View {
                     settings.updateColor(to: pickedColor)
                 }
             ColorSlidersView(myColor: $pickedColor)
-                .onChange(of: pickedColor, perform: { value in
+                .onChange(of: pickedColor) { _ in
                     settings.updateColor(to: pickedColor)
-                })
+                }
 
         }
         
