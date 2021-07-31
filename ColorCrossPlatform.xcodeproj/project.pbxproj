@@ -119,8 +119,7 @@
 			children = (
 				D259ED6226ACE30800C98748 /* ColorCrossPlatformApp.swift */,
 				D259ED6326ACE30800C98748 /* ContentView.swift */,
-				DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */,
-				DA66D63E26B350900054EF56 /* ColorControllerView.swift */,
+				DACD9FC926B58F76000409E8 /* AppViews */,
 				DA7EEA4E26B4755F00F9C79C /* GenericViews */,
 				DA55F0A526AF47D40004D6CB /* ColorControl */,
 				D259ED6426ACE30900C98748 /* Assets.xcassets */,
@@ -216,6 +215,15 @@
 				DA7EEA4F26B4764200F9C79C /* CrossPlatformSizeClass.swift */,
 			);
 			path = GenericViews;
+			sourceTree = "<group>";
+		};
+		DACD9FC926B58F76000409E8 /* AppViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA66D63E26B350900054EF56 /* ColorControllerView.swift */,
+				DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */,
+			);
+			path = AppViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

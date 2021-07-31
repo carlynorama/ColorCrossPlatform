@@ -20,13 +20,9 @@ struct PushUpdateDialogView: View {
                 CopyButton(textToCopy: store.getMessage(settings)) {
                     Text("Copy to Clipboard")
                 }
-                .font(.title)
-                .padding()
                 Button("Press to dismiss") {
                     presentationMode.wrappedValue.dismiss()
                 }
-                .font(.title)
-                .padding()
             }
         }
         

@@ -31,7 +31,9 @@ struct ContentView: View {
         }
         .padding()
         .sheet(isPresented: $showSheet) {
-            PushUpdateDialogView(settings: $settings).environmentObject(store)
+            PushUpdateDialogView(settings: $settings)
+                .environmentObject(store)
+                .padding()
         }
     }
     
