@@ -53,6 +53,8 @@
 		DAAB504326B1A39500B87706 /* Blink1DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB504226B1A39500B87706 /* Blink1DeviceStore.swift */; };
 		DAAF3D8426B355F2005B2CD4 /* Blink1DeviceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAB504226B1A39500B87706 /* Blink1DeviceStore.swift */; };
 		DAAF3D8526B355FA005B2CD4 /* Switchboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA976A9926B2FE0E00B983AA /* Switchboard.swift */; };
+		DACD9FCB26B5939F000409E8 /* GeneralColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD9FCA26B5939F000409E8 /* GeneralColorPickerView.swift */; };
+		DACD9FCC26B5939F000409E8 /* GeneralColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD9FCA26B5939F000409E8 /* GeneralColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,7 @@
 		DA976A9926B2FE0E00B983AA /* Switchboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switchboard.swift; sourceTree = "<group>"; };
 		DA976A9B26B313BD00B983AA /* Blink1CLIStringGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Blink1CLIStringGenerator.swift; path = Shared/Blink1/Blink1CLIStringGenerator.swift; sourceTree = SOURCE_ROOT; };
 		DAAB504226B1A39500B87706 /* Blink1DeviceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Blink1DeviceStore.swift; path = Shared/Blink1/Blink1DeviceStore.swift; sourceTree = SOURCE_ROOT; };
+		DACD9FCA26B5939F000409E8 /* GeneralColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneralColorPickerView.swift; path = Shared/ColorControl/GeneralColorPickerView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +161,6 @@
 		DA22C0E826B074CA007D0C7C /* UISettings */ = {
 			isa = PBXGroup;
 			children = (
-				DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */,
 				DA11C28F26B04EAB004A4687 /* Mach2OutlineShape.swift */,
 				DA55F0A626AF481D0004D6CB /* Blink1UISettings.swift */,
 				DA339B6A26B0741B007A8F09 /* SelectionState.swift */,
@@ -197,6 +199,7 @@
 		DA55F0A526AF47D40004D6CB /* ColorControl */ = {
 			isa = PBXGroup;
 			children = (
+				DACD9FCA26B5939F000409E8 /* GeneralColorPickerView.swift */,
 				DA55F0A126AF47660004D6CB /* ColorSlidersView.swift */,
 				D259ED8426ACE34000C98748 /* Color+Components.swift */,
 				DA27457426B340B000ADACB7 /* Color+StringDescriptions.swift */,
@@ -220,6 +223,7 @@
 		DACD9FC926B58F76000409E8 /* AppViews */ = {
 			isa = PBXGroup;
 			children = (
+				DA55F0AC26AF53F70004D6CB /* CurrentSettingView.swift */,
 				DA66D63E26B350900054EF56 /* ColorControllerView.swift */,
 				DA3F5CC526B499DC00EEDDF0 /* PushUpdateDialogView.swift */,
 			);
@@ -325,6 +329,7 @@
 			files = (
 				DA55F0A726AF481D0004D6CB /* Blink1UISettings.swift in Sources */,
 				D259ED7726ACE30900C98748 /* ContentView.swift in Sources */,
+				DACD9FCB26B5939F000409E8 /* GeneralColorPickerView.swift in Sources */,
 				DA22C0EB26B0751E007D0C7C /* Blink1Device.swift in Sources */,
 				DA976A9A26B2FE0E00B983AA /* Switchboard.swift in Sources */,
 				DA66D63F26B350900054EF56 /* ColorControllerView.swift in Sources */,
@@ -354,6 +359,7 @@
 			files = (
 				DAAF3D8426B355F2005B2CD4 /* Blink1DeviceStore.swift in Sources */,
 				DA55F0A826AF481D0004D6CB /* Blink1UISettings.swift in Sources */,
+				DACD9FCC26B5939F000409E8 /* GeneralColorPickerView.swift in Sources */,
 				D259ED7826ACE30900C98748 /* ContentView.swift in Sources */,
 				DA22C0EC26B0751E007D0C7C /* Blink1Device.swift in Sources */,
 				D259ED8A26ACE34000C98748 /* Color+Components.swift in Sources */,

@@ -13,31 +13,39 @@ struct ColorControllerView: View {
     
     var body: some View {
         // ------------
-        Picker("Which LEDs", selection: $settings.selectionState) {
-            ForEach(SelectionState.allCases, id: \.self) { value in
-                Text("\(value.description)").tag(value)
-            }
-        }
-        .pickerStyle(SegmentedPickerStyle())
 
-        AdaptiveStack {
+
+        VStack {
+            Picker("Which LEDs", selection: $settings.selectionState) {
+                ForEach(SelectionState.allCases, id: \.self) { value in
+                    Text("\(value.description)").tag(value)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            Text("Hello? Where are the Color boxes?")
             pickedColor
                 .onTapGesture {
                     settings.updateColor(to: pickedColor)
                 }
+            Rectangle()
+                .fill(pickedColor)
+                .onTapGesture {
+                    settings.updateColor(to: pickedColor)
+                }
             ColorSlidersView(myColor: $pickedColor)
-                .onChange(of: pickedColor) { _ in
+                .onChange(of: pickedColor) { value in
                     settings.updateColor(to: pickedColor)
                 }
 
         }
         
+        
         // ------------
     }
 }
 
-//struct ColorControllerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ColorControllerView()
-//    }
-//}
+struct ColorControllerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorControllerView(pickedColor: .constant(Color.blue), settings: .constant(Blink1UISettings.exampleSettings))
+    }
+}

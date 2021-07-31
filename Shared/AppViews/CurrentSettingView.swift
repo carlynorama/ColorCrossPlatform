@@ -16,24 +16,13 @@ struct CurrentSettingView: View {
     //    @Binding var color2:Color //= Color.lemonYellow
     //
     var topSelected:Bool {
-        get {
-            blink1.selectionState == .both || blink1.selectionState == .top
-        }
-        set {
-            
-        }
-        
+        get { blink1.selectionState == .both || blink1.selectionState == .top }
     }
     
     var bottomSelected:Bool {
-        get {
-            blink1.selectionState == .both || blink1.selectionState == .bottom
-        }
+        get { blink1.selectionState == .both || blink1.selectionState == .bottom }
     }
-    
-    
-    
-    
+
     
     var body: some View {
         

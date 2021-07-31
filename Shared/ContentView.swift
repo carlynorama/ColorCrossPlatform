@@ -27,6 +27,8 @@ struct ContentView: View {
                 Text("Send Settings to Device")
             }).disabled(settings.selectionState == .none)
             
+            pickedColor
+        
             ColorControllerView(pickedColor: $pickedColor, settings: $settings)
         }
         .padding()
